@@ -1,4 +1,3 @@
-// import { children } from "react";
 import "./style.css";
 
 const Container = ({ children }) => (
