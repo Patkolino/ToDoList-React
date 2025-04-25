@@ -15,16 +15,13 @@ const hideDoneTasks = false;
 function App() {
     return (
         <Container>
-
             <Header
                 title="To do list"
             />
-
             <Section
                 title="Add new task"
                 container={<Form />}
             />
-
             <Section
                 title="Task list"
                 container={
@@ -34,7 +31,6 @@ function App() {
                     <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
                 }
             />
-
         </Container>
     );
 }
