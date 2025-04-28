@@ -1,16 +1,29 @@
 # To do list 
 
-Simple app that allows users to create To do list
+Make your day to day life easier with this simple app that will allow you to manage your daily tasks!
 
 ## Description
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The app is currently under development, and no interactable elements are implemented yet, initial tasks are pre-added.
+![To do list preview](assets/Preview.png)
 
-![To do list preview](src/images/Preview.png)
+With this app, users can:
+- **Add new task** - by clicking "Add task" button or by simply pressing Enter button on keyboard
+- **Mark task as completed** - by clicking the green field which appears on left-side of the task (after marking a task as completed, a checkmark emoji ✅ will appear within green field and task will be crossed out)
+- **Delete task** - by clicking the red field with trashbin 🗑️ icon a specific task is removed
+- **Mark all as done** - by clicking this button, all tasks will be marked as completed (upon marking all as completed the above mentioned button will not be available)
+- **Hide/Show done tasks** - this option will toggle and hide or show the tasks that are marked as completed
 
-[View live demo - To do list React](https://patkolino.github.io/ToDoList-React/)
+App prevents adding new task in case only spaces or no value is set in the "What has to be done?" field. 
+
+In case there are no tasks added, "Hide done tasks" and "Mark all as done" options will not be visible.
+
+A quick visual presentation of the app:
+
+![App preview demo - gif](assets/ToDoListDemo.gif)
+
+[Try out the app!](https://patkolino.github.io/ToDoList-React/)
 
 ## Technologies
 

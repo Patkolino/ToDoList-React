@@ -5,7 +5,7 @@ import Section from './Section';
 import Header from './Header';
 import Container from './Container';
 import { useState } from 'react';
-import initialTasks from './Form/initialvalue';
+import initialTasks from './Tasks/initialTasks';
 
 function App() {
     const [tasks, setTasks] = useState(initialTasks);
