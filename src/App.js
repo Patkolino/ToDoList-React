@@ -4,35 +4,35 @@ import Buttons from './Buttons';
 import Section from './Section';
 import Header from './Header';
 import Container from './Container';
+import { useState } from 'react';
+import initialTasks from './Form/initialvalue';
 
-const tasks = [
-    { id: 1, content: "Wash dishes", done: true },
-    { id: 2, content: "Clean kitchen", done: false },
-];
-
-const hideDoneTasks = false;
+const hideDone = false;
 
 function App() {
-    return (
-        <Container>
-            <Header
-                title="To do list"
-            />
-            <Section
-                title="Add new task"
-                container={<Form />}
-            />
-            <Section
-                title="Task list"
-                container={
-                    <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
-                }
-                extraHeaderContent={
-                    <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
-                }
-            />
-        </Container>
-    );
+
+const [tasks, setTasks] = useState(initialTasks);
+
+return (
+    <Container>
+        <Header
+            title="To do list"
+        />
+        <Section
+            title="Add new task"
+            container={<Form />}
+        />
+        <Section
+            title="Task list"
+            container={
+                <Tasks tasks={tasks} hideDone={hideDone} />
+            }
+            extraHeaderContent={
+                <Buttons tasks={tasks} hideDone={hideDone} />
+            }
+        />
+    </Container>
+);
 }
 
 export default App;

@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The app is currently under development, and no interactable elements are implemented yet, initial tasks are pre-added.
 
-![To do list preview](public/Preview.png)
+![To do list preview](src/images/Preview.png)
 
 [View live demo - To do list React](https://patkolino.github.io/ToDoList-React/)
 
