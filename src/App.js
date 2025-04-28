@@ -8,11 +8,15 @@ import { useState } from 'react';
 import initialTasks from './Form/initialvalue';
 
 function App() {
-
     const [tasks, setTasks] = useState(initialTasks);
     const [hideDone, setHideDone] = useState(false);
+
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
+    };
+
+    const removeTask = (id) => {
+        setTasks(tasks => tasks.filter(task => task.id !== id));
     };
 
     return (
@@ -27,7 +31,7 @@ function App() {
             <Section
                 title="Task list"
                 container={
-                    <Tasks tasks={tasks} hideDone={hideDone} />
+                    <Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />
                 }
                 extraHeaderContent={
                     <Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} />
