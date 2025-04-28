@@ -33,6 +33,17 @@ function App() {
         setTasks(tasks => tasks.map(task => ({ ...task, done: true })));
     };
 
+    const addNewTask = (content) => {
+        setTasks(tasks => [
+            ...tasks,
+            {
+                content,
+                done: false,
+                id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+            },
+        ])
+    };
+
     return (
         <Container>
             <Header
@@ -40,12 +51,17 @@ function App() {
             />
             <Section
                 title="Add new task"
-                container={<Form />}
+                container={<Form addNewTask={addNewTask} />}
             />
             <Section
                 title="Task list"
                 container={
-                    <Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} toggleTaskDone={toggleTaskDone} />
+                    <Tasks
+                        tasks={tasks}
+                        hideDone={hideDone}
+                        removeTask={removeTask}
+                        toggleTaskDone={toggleTaskDone}
+                    />
                 }
                 extraHeaderContent={
                     <Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} setAllDone={setAllDone} />
