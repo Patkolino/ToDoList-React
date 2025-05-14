@@ -9,15 +9,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![To do list preview](assets/Preview.png)
 
 With this app, users can:
-- **Add new task** - by clicking "Add task" button or by simply pressing Enter button on keyboard
+- **Add new task** - by clicking **Add task** button or by simply pressing Enter button on keyboard
 - **Mark task as completed** - by clicking the green field which appears on left-side of the task (after marking a task as completed, a checkmark emoji ✅ will appear within green field and task will be crossed out)
 - **Delete task** - by clicking the red field with trashbin 🗑️ icon a specific task is removed
 - **Mark all as done** - by clicking this button, all tasks will be marked as completed (upon marking all as completed the above mentioned button will not be available)
 - **Hide/Show done tasks** - this option will toggle and hide or show the tasks that are marked as completed
 
-App prevents adding new task in case only spaces or no value is set in the "What has to be done?" field. 
+App prevents adding new task in case only spaces or no value is set in the ***What has to be done?*** field. 
 
-In case there are no tasks added, "Hide done tasks" and "Mark all as done" options will not be visible.
+In case there are no tasks added, ***Hide done tasks*** and ***Mark all as done*** options will not be visible.
 
 A quick visual presentation of the app:
 
@@ -27,14 +27,14 @@ A quick visual presentation of the app:
 
 ## Technologies
 
-- Create React App
-- Babel
-- WebPack
-- ESLint
-- HTML
-- CSS
-
-BEM convention methodology used to structure class names for easier readability, scalability, and maintainability of styles.
+- **Create React App** - Project bootstraped using CRA which includes:
+    - **Babel** - Automatically transpiles modern JavaScript and JSX for compatibility
+    - **WebPack** - Bundles assets and modules efficiently
+- **React** - Library for building the user interface
+- **HTML**
+- **CSS** - Custom responsive styling
+- **Web Storage API** - Utilized `localeStorage` to persist tasks across sessions
+- **BEM Methodology** - Applied Block Element Modifier naming convention for clean, scalable and maintainable styles
 
 ## Available Scripts
 
