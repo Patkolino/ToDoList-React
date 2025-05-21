@@ -19,7 +19,7 @@ export const HeaderTitle = styled.header`
     justify-content: space-between;
     padding: 20px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;
