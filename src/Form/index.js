@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./style.css";
-import { eventWrapper } from "@testing-library/user-event/dist/utils";
+import { StyledForm, Input, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
@@ -18,15 +17,14 @@ const Form = ({ addNewTask }) => {
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <input
+        <StyledForm onSubmit={onFormSubmit}>
+            <Input
                 value={newTaskContent}
-                className="form__input"
                 placeholder="What has to be done?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
-            <button className="form__button">Add task</button>
-        </form>
+            <Button>Add task</Button>
+        </StyledForm>
     );
 };
 

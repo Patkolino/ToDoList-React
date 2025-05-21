@@ -10,5 +10,5 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  background: #eee;
+  background: ${({ theme }) => theme.color.gallery}; 
 }
