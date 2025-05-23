@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![To do list preview](assets/Preview.png)
 
 With this app, users can:
-- **Add new task** - by clicking **Add task** button or by simply pressing Enter button on keyboard
+- **Add new task** - by clicking **Add task** button or by simply pressing Enter button on keyboard. Once task is added, focus is set to input field
 - **Mark task as completed** - by clicking the green field which appears on left-side of the task (after marking a task as completed, a checkmark emoji ✅ will appear within green field and task will be crossed out)
 - **Delete task** - by clicking the red field with trashbin 🗑️ icon a specific task is removed
 - **Mark all as done** - by clicking this button, all tasks will be marked as completed (upon marking all as completed the above mentioned button will not be available)
@@ -27,14 +27,16 @@ A quick visual presentation of the app:
 
 ## Technologies
 
+- **React** 
+    - **useState** & **useEffect** for managing component state and side effects 
+    - **Custom Hooks** - Reusable functions that simplify and organize logic within app (`useTasks` handles all tasks logic)
 - **Create React App** - Project bootstraped using CRA which includes:
     - **Babel** - Automatically transpiles modern JavaScript and JSX for compatibility
     - **WebPack** - Bundles assets and modules efficiently
-- **React** - Library for building the user interface
-- **HTML**
-- **CSS** - Custom responsive styling
-- **Web Storage API** - Utilized `localeStorage` to persist tasks across sessions
-- **BEM Methodology** - Applied Block Element Modifier naming convention for clean, scalable and maintainable styles
+- **Styled Components** - CSS directly applied in JavaScript, keeping code simpler and easier to manage and read. `GlobalStyles` and `theme` were added as well.
+- **normalize.css** - Installed via npm to ensure consistent styling across different browsers
+- **Responsive design** - Custom layout and styling for mobile and desktop views
+- **Web Storage API** - Uses `localeStorage` for data persistence (tasks)
 
 ## Available Scripts
 

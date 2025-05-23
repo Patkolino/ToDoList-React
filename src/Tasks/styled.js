@@ -16,7 +16,7 @@ export const Item = styled.li`
     word-break: break-word;
 
     ${({ hidden }) => hidden && css`
-        display:none;
+        display: none;
     `}
 `;
 

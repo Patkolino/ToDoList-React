@@ -10,7 +10,7 @@ export const Title = styled.h2`
     margin: 15px 0;
 `;
 
-export const HeaderTitle = styled.header`
+export const StyledHeader = styled.header`
     display: grid;
     grid-template-columns: auto auto;
     border-bottom: 1px solid ${({ theme }) => theme.color.alto};
